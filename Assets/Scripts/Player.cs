@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         stepTimer = stepInterval;
+
     }
 
     // Update is called once per frame
@@ -59,7 +60,6 @@ public class Player : MonoBehaviour
             Debug.Log(stepTimer);
             if (stepTimer <= 0)
             {
-                Debug.Log("entrou play");
                 PlayFootstepSound();
                 stepTimer = stepInterval;
             }            
